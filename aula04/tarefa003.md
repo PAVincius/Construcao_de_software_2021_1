@@ -4,22 +4,22 @@
 Responda as questões abaixo (exercite os comandos do git correspondentes). Lembre-se de que o “interessante” não é exatamente o conjunto de respostas, mas o processo de obtê-las e a experiência obtida com a execução dos comandos.
 
 
-1. Qual o comando para obter a versão instalada do Git?
+1. Qual o comando para obter a versão instalada do Git? R: git --version
 2. Qual o efeito da execução de cada um dos comandos abaixo?
-  a. git help
-  b. git help checkout
-  c. git help merge
-  d. git init
-  e. git add --all
-  f. git add -u
-  g. git config -l
-  h. git mv a.txt b.txt
-  i. git reset --hard
-  j. git log -27
-3. O fluxo “clássico” de interação com o Git é algo como “alterar um ou mais arquivos”, “acrescentar essas mudanças para serem contemplados no próximo commit” e, finalmente, executar um “commit”. Quais os comandos necessários para realizar os dois últimos “passos” desse fluxo?
-4. Qual o comando deve ser executado para identificar o que foi alterado desde o último “commit”?
-5. Em um dado repositório, arquivos simplesmente copiados para lá, ou seja, _untracked_, podem ser exibidos/identificados com que comando?
-6. Qual o comando para efetuar um _commit_?
+  a. git help R: Apresenta a lista de comandos disponíveis pelo git
+  b. git help checkout R: Mostra a documentação do comando checkout 
+  c. git help merge R: Mostra a documentação do comando merge
+  d. git init R: Inicia um repositorio git
+  e. git add --all R: Adiciona todas as mudanças para o commit
+  f. git add -u R: Adiciona arquivos específicos
+  g. git config -l R: Lista todas as variáveis 
+  h. git mv a.txt b.txt R: Nesse caso renomeou o arquivo .txt
+  i. git reset --hard R: Reinicia a arvore de trabalho, descartando os commits feitos.
+  j. git log -27 R: Determina o tamanho da mensagem inserida no Commit, em bytes.
+3. O fluxo “clássico” de interação com o Git é algo como “alterar um ou mais arquivos”, “acrescentar essas mudanças para serem contemplados no próximo commit” e, finalmente, executar um “commit”. Quais os comandos necessários para realizar os dois últimos “passos” desse fluxo? R: git commit -m "comentario" e o git push 
+4. Qual o comando deve ser executado para identificar o que foi alterado desde o último “commit”? R: git status
+5. Em um dado repositório, arquivos simplesmente copiados para lá, ou seja, _untracked_, podem ser exibidos/identificados com que comando? git ls-files --others --exclude-standard
+6. Qual o comando para efetuar um _commit_? git commit -m "comentario"
 7. Qual o comando que devemos empregar para descartar mudanças ocorridas no arquivo teste.txt, por exemplo?
 8. O que deve ser feito para que um determinado diretório do seu repositório seja ignorado pelo Git? Faça uma busca por **.gitignore**.
 9. O que acontece se o seu repositório local for acidentalmente removido?
