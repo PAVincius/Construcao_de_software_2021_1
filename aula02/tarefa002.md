@@ -23,4 +23,10 @@ Entre os conceitos que envolvem o funcionamento de uma REST API temos:
 1- Todos os pedidos de API para o mesmo recurso devem ter a mesma estrutura, independentemente do requisitante dessa API.
  Os recursos não devem ser demasiado grandes mas devem conter todas as informações que o cliente possa necessitar.
 
-2- Da mesma forma, uma aplicação servidor não deve modificar a aplicação cliente a não ser passá-la para os dados solicitados via HTTP
+2- Da mesma forma, uma aplicação servidor não deve modificar a aplicação cliente a não ser passá-la para os dados solicitados via HTTP.
+
+3- As APIs necessitam apenas das informações necessárias para o processamento da requisição, não instanciando nenhuma sessão no servidor, nem possibilitando que o mesmo salve dados sobre o cliente.
+
+4- A API é composta de forma que nem o servido e nem o cliente tenham acesso um com o outro, de forma que se considera que ambos tenham várias camadas para tal.
+
+5- As informações deverão ser  salvas no cache de um dos dois lados. O servidor armazena as informações necessárias para a requisição do cliente aumentando assim o desempenho da comunicação.
